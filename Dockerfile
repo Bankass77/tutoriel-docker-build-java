@@ -1,5 +1,5 @@
 FROM java:8
-COPY C:/Users/a.guindo/Documents/dockerformation
-WORKDIR  amadouguindo/dockerformation
+COPY --FROM=C:/Users/a.guindo/Documents/dockerformation target=amadouguindo/cheers/dockerformation
+WORKDIR  amadouguindo/cheers/dockerformation
 RUN javac PrintHelloDocker.java
 CMD ["java","PrintHelloDocker"]
